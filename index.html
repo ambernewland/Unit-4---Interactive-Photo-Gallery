@@ -3,6 +3,7 @@
 <head>
     <title>Interactive Photo Gallery</title>
     <meta name="viewport" content="width=device-width">
+    <link href="lightbox/dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normal.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
@@ -19,7 +20,7 @@
       <div class="js-lightbox-items gallery-grid">
        
         <div class="gallery-item">
-          <a href="assets/photos/01.jpg">
+          <a href="assets/photos/01.jpg" data-lightbox="image-1" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/01.jpg"
                  title="Hay Bales"
@@ -28,7 +29,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/02.jpg">
+          <a href="assets/photos/02.jpg" data-lightbox="image-2" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/02.jpg"
                  title="Lake"
@@ -37,7 +38,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/03.jpg">
+          <a href="assets/photos/03.jpg" data-lightbox="image-3" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/03.jpg"
                  title="Canyon"
@@ -46,7 +47,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/04.jpg">
+          <a href="assets/photos/04.jpg" data-lightbox="image-4" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/04.jpg"
                  title="Iceberg"
@@ -55,7 +56,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/05.jpg">
+          <a href="assets/photos/05.jpg" data-lightbox="image-5" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/05.jpg"
                  title="Desert"
@@ -64,7 +65,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/06.jpg">
+          <a href="assets/photos/06.jpg" data-lightbox="image-6" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/06.jpg"
                  title="Fall"
@@ -73,7 +74,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/07.jpg">
+          <a href="assets/photos/07.jpg" data-lightbox="image-7" data-title="I drove past this plantation yesterday, everything is so green!">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/07.jpg"
                  title="Plantation"
@@ -82,7 +83,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/08.jpg">
+          <a href="assets/photos/08.jpg" data-lightbox="image-8" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/08.jpg"
                  title="Dunes"
@@ -91,7 +92,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/09.jpg">
+          <a href="assets/photos/09.jpg" data-lightbox="image-9" data-title="We enjoyed a quiet stroll down this countryside lane.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/09.jpg"
                  title="Countryside Lane"
@@ -100,7 +101,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/10.jpg">
+          <a href="assets/photos/10.jpg" data-lightbox="image-10" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/10.jpg"
                  title="Sunset"
@@ -109,7 +110,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/11.jpg">
+          <a href="assets/photos/11.jpg" data-lightbox="image-11" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/11.jpg"
                  title="Cave"
@@ -118,7 +119,7 @@
           
         </div>
         <div class="gallery-item">
-          <a href="assets/photos/12.jpg">
+          <a href="assets/photos/12.jpg" data-lightbox="image-12" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
             <img class="gallery-item-image"
                  src="assets/photos/thumbnails/12.jpg"
                  title="Bluebells"
@@ -131,7 +132,15 @@
 
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/search.js"></script>
-  
+    <script src="lightbox/dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+        'resizeDuration' : 400,
+        'wrapAround' : false,
+        'alwaysShowNavOnTouchDevices' : true,
+        'max-width' : 200
+    });
+    </script>
   
 </body>
 </html>
