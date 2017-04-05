@@ -50,7 +50,7 @@ input {
 .gallery-item {
     width: calc((200 / 980) * 100%);
     margin-bottom: calc((60 / 980) * 100%);
-    opacity: 8;
+    opacity: 1;
     transition: all 0.5s ease-in;
     
 }
@@ -106,18 +106,16 @@ input {
 }
 
 
-/**Media Queries**/
-
-
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
   .gallery-item {
     width: calc((200 / 600) * 90%);
     margin-bottom: calc((40 / 600) * 90%);
     }
-    
+}
     
 @media screen and (max-width: 480px){
   .gallery-item {
     width: calc((280 / 600) * 100%);
     margin-bottom: calc((40 / 600) * 90%);
     }
+}
