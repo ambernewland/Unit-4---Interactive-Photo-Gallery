@@ -6,7 +6,6 @@ input {
     line-height: 1.5;
 }
 
-
 .body {
     padding: 0 30px;
 }
@@ -83,14 +82,31 @@ input {
 
 .lb-data .lb-number {
     opacity: 0;
+    display: none !important;
 }
 
 .lb-dataContainer {
     max-width: 100%;
 }
 
+.lightbox {
+    top: 50% !important;
+    transform: translateY(-50%);
+}
 
 
+.lightbox .lb-nav a.lb-prev {
+    left: 8%;
+}
+
+.lightbox .lb-nav a.lb-next {
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/**Media Queries**/
 
 
 @media screen and (max-width: 768px){
