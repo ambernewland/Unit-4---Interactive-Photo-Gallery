@@ -51,7 +51,7 @@ input {
 .gallery-item {
     width: calc((200 / 980) * 100%);
     margin-bottom: calc((60 / 980) * 100%);
-    opacity: 5;
+    opacity: 8;
     transition: all 0.5s ease-in;
     
 }
@@ -61,8 +61,12 @@ input {
     box-shadow: 0 0 4px #efefef;
 }
 
+.lb-data {
+    display: inline-block;
+}
+
 .lb-data .lb-caption {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1em;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
@@ -71,12 +75,20 @@ input {
 }
 
 .lb-data .lb-details {
-    width: 100%;
-    float: left;
-    text-align: center;
-    line-height: 1.1em;
-    padding-top: 1em;
+    max-width: 600px;
+    align-content: center;
+    line-height: 2em;
+    padding-top: 3em;
 }
+
+.lb-data .lb-number {
+    opacity: 0;
+}
+
+.lb-dataContainer {
+    max-width: 100%;
+}
+
 
 
 
